@@ -1,0 +1,56 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Claude Test"
+run/main_scene="uid://brbnsedu5hudn"
+config/features=PackedStringArray("4.5", "Mobile")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=2200
+window/size/viewport_height=900
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/virtual_joystick/plugin.cfg")
+
+[input]
+
+run={
+"deadzone": 0.2,
+"events": []
+}
+jump={
+"deadzone": 0.2,
+"events": []
+}
+sprint={
+"deadzone": 0.2,
+"events": []
+}
+crouch={
+"deadzone": 0.2,
+"events": []
+}
+peek_left={
+"deadzone": 0.2,
+"events": []
+}
+peek_right={
+"deadzone": 0.2,
+"events": []
+}
+
+[rendering]
+
+renderer/rendering_method="mobile"
